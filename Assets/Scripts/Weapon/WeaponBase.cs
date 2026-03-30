@@ -1,10 +1,13 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
+
+[Serializable]
 public class WeaponBase : MonoBehaviour
 {
-    private string _name;
-    private WeaponMesh _mesh;
+    [SerializeField]  private string _name;
+    [SerializeField] private WeaponMesh _mesh;
     private float _firerate;
     private Bullet _bullet;
     private float _damage;

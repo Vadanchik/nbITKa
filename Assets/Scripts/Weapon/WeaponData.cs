@@ -3,6 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Weapon", menuName = "Weapon/Create new Weapon")]
 public class WeaponData : ScriptableObject
 {
+    [SerializeField] private WeaponBase weapon;
     [SerializeField] private string _name;
     [SerializeField] private WeaponMesh _mesh;
     [SerializeField] private float _firerate;
